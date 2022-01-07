@@ -297,6 +297,11 @@
             \cvtext{#4}\\
         }
     }
+
+    \ifthenelse{\isempty{#5}}{}{
+        \vspace{9pt}
+        {#5}
+    }
     \vspace{14pt}
 }
 
@@ -414,17 +419,27 @@
             \end{minipage}} \\
 
 %---------------------------------------------------------------------------------------
+%	CONTACTS
+%----------------------------------------------------------------------------------------
+            \cvsection{Contacts}
+
+            \icontext{MapMarker}{16}{Saint Petersburg, Russia}{black}\\[2pt]
+            \iconhref{Home}{16}{Blog}{https://rafaelldi.blog/}{black}\\[2pt]
+            \iconhref{Github}{16}{GitHub}{https://github.com/rafaelldi}{black}\\[2pt]
+            \iconhref{Twitter}{16}{Twitter}{https://twitter.com/rafaelldi}{black}\\[2pt]
+            \iconhref{Linkedin}{16}{LinkedIn}{https://linkedin.com/in/rivalabdrakhmanov}{black}\\[2pt]
+
+            \newpage
+%---------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
             \cvsection{Skills}
 
-            \cvskill{Software development} {9+ yrs.} {1} \\[2pt]
-            \cvskill{.NET/C\#} {6+ yrs.} {0.66} \\[2pt]
-            \cvskill{Web development} {4+ yrs.} {0.44} \\[2pt]
-            \cvskill{Distributed systems} {3+ yrs.} {0.33} \\[2pt]
-            \cvskill{Diagnostics} {1+ yrs.} {0.11} \\[2pt]
-            \cvskill{Kotlin} {1+ yrs.} {0.11} \\[2pt]
-
+            \cvskill{.NET/C\#} {6+ yrs.} {1} \\[2pt]
+            \cvskill{Web development} {4+ yrs.} {0.66} \\[2pt]
+            \cvskill{Distributed systems} {3+ yrs.} {0.5} \\[2pt]
+            \cvskill{Diagnostics} {1+ yrs.} {0.16} \\[2pt]
+            \cvskill{Kotlin} {1+ yrs.} {0.16} \\[2pt]
 
 %---------------------------------------------------------------------------------------
 %	LANGUAGES
@@ -434,21 +449,9 @@
             \cvskill{Russian} {Native} {1} \\[2pt]
             \cvskill{English} {B2} {0.8} \\[2pt]
 
-            \newpage
-
-
 %---------------------------------------------------------------------------------------
-%	CONTACTS
+%	QR CODE
 %----------------------------------------------------------------------------------------
-            \cvsection{Contacts}
-
-            \icontext{MapMarker}{16}{Saint Petersburg, Russia}{black}\\[2pt]
-            \iconhref{Home}{16}{Blog}{https://northern-dev.net/}{black}\\[2pt]
-            \iconhref{Github}{16}{GitHub}{https://github.com/rafaelldi}{black}\\[2pt]
-            \iconhref{Twitter}{16}{Twitter}{https://twitter.com/rafaelldi}{black}\\[2pt]
-            \iconhref{Linkedin}{16}{LinkedIn}{https://linkedin.com/in/rivalabdrakhmanov}{black}\\[2pt]
-
-
             \vfill
             \cvqrcode{0.7}
         \end{leftcolumn}
@@ -462,11 +465,13 @@
             \vspace{4pt}
 
             \cvtext{
-                I really fond of ASP.NET Core programming and creating some cool stuff.
+                Hi, my name is Rival, and I'm a .NET developer.
 
-                Also, I'm interested in open source development, so I have some public repositories with pet-projects, which give me an opportunity to try new technologies or development methodologies and be open to exchange view about them with other developers. Besides, I have a personal blog in English, where parts of my pet-projects are also used as examples for articles.
+                During my career, I managed to work on different projects. Lately, I have dealt with distributed business applications.
 
-                As well, I like to feel myself a part of international developers community and that motivated me to become a .NET Foundation member and join community activities in Saint Petersburg.
+                I like programming, so I often try some approaches and technologies and explore new areas in my free time. Recently, I've been fond of application diagnostics. I have a blog where I describe the results of my study. I try to be active in the community - I attend meetups, conferences, sometimes speak at them myself. Also, I'm working on my pet projects, such as \href{https://plugins.jetbrains.com/plugin/16426-tye}{Tye plugin for Rider}.
+
+                I would be interested in working in a strong team on complex projects.
             }
 
 %---------------------------------------------------------------------------------------
@@ -480,7 +485,11 @@
             {07/2019 - today}
             {Software Developer}
             {Positive Technologies}
-            {}
+            {I'm working on various high load event-based projects on handling information security incidents.}
+            {\cvlist{
+                \item Projects: FinCERT, PT IPC, MaxPatrol 02
+                \item Technologies and concepts: .NET, PostgreSQL, RabbitMQ, Kafka, Docker, DDD, CQRS, Event Sourcing, Microservices
+            }}
             \vfill\null
 
             \cvevent
@@ -488,6 +497,7 @@
             {Software Developer}
             {Radario LLC}
             {I was developing high load web application for event industry with microservices approach, creating high performance analytics and reporting service with ClickHouse as database, creating mobile application with Xamarin.Forms.}
+            {}
             \vfill\null
 
             \cvevent
@@ -495,6 +505,7 @@
             {Software Developer}
             {Splat}
             {I was creating desktop application for sport analytics with different metrics and coefficients of live match. }
+            {}
             \vfill\null
 
             \cvevent
@@ -502,7 +513,7 @@
             {Software Developer}
             {Promt}
             {I was creating system of machine based translation, working on statistical machine translation, building language models. By doing this I was working with statistical modeling, machine learning, natural language processing, computational linguistics.}
-            \vfill\null
+            {}
             \vfill\null
 
             \cvevent
@@ -510,9 +521,10 @@
             {Testing Engineer}
             {NVision Group}
             {I was working as part of the emergency testing team, testing critical bugs from production. }
+            {}
             \vfill\null
 
-
+            \newpage
 %---------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
@@ -523,9 +535,8 @@
             {Mathematician, System Programmer}
             {Saint Petersburg State University}
             {Master's thesis: <<Monte Carlo method for integral equations in financial mathematics>>.}
+            {}
             \vfill\null
-
-            \newpage
 
 %---------------------------------------------------------------------------------------
 %	COURSES
@@ -534,15 +545,38 @@
 
             \cvevent
             {04/2021}
-            {.NET Diagnostics Expert (EN)}
+            {\href{https://academy.dotnetos.org/certificates/sujhbeo6nl}{.NET Diagnostics Expert (EN)}}
             {Dotnetos Academy}
+            {}
             {}
             \vfill\null
 
             \cvevent
             {05/2020}
-            {Advanced Distributed Systems Design using SOA \& DDD}
+            {\href{}{Advanced Distributed Systems Design using SOA \& DDD}}
             {Particular Software}
+            {}
+            {}
+            \vfill\null
+
+%---------------------------------------------------------------------------------------
+%	TALKS
+%----------------------------------------------------------------------------------------
+            \cvsection{Talks}
+
+            \cvevent
+            {12/2020}
+            {\href{https://youtu.be/TuKNdm4XBp4}{Patterns of distributed systems in the traditions of Russia’s northern indigenous and minority peoples}}
+            {DOTNEXT 2020}
+            {}
+            {}
+            \vfill\null
+
+            \cvevent
+            {10/2019}
+            {\href{https://youtu.be/r16Zx591LJs}{HttpClient: common mistakes and ways to avoid them}}
+            {SpbDotNet meetup}
+            {}
             {}
             \vfill\null
 
